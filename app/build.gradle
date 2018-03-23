@@ -1,20 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "26.0.0"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "za.co.riggaroo.datecountdown"
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "za.co.riggaroo.datecountdown.injection.MockTestRunner"
         //jackOptions is deprecated in android Studio 3.0 but this is for educational purposes
         // to compile this project in android studio 2.3 stable version.
-        jackOptions {
-            enabled true
-        }
+
     }
     buildTypes {
         release {
@@ -29,7 +27,7 @@ android {
 }
 ext {
     arch_version = '1.0.0-alpha1'
-    support_library_version = '25.3.1'
+    support_library_version = '26.0.0'
     dagger_version = "2.8"
     espresso_version = '2.2.2'
     runner_version = '0.5'
